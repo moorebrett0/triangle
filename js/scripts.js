@@ -4,6 +4,6 @@ var triangle = function(input1, input2, input3) {
     var c = parseInt(input3);
 
     if ((a = b) && (a = c) && (b = c)) {
-        return "isoceles";
+        return "equilateral";
     }
 };
