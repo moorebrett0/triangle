@@ -9,4 +9,7 @@ var triangle = function(input1, input2, input3) {
     else if ((a == b) || (a == c) || (b==c)) {
         return "isoceles";
     }
+    else if ((a != b) && (b != c)) {
+        return "scalene";
+    }
 };
