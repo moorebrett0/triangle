@@ -3,7 +3,11 @@ var triangle = function(input1, input2, input3) {
     var b = parseInt(input2);
     var c = parseInt(input3);
 
-    if ((a == b) && (a == c) && (b == c)) {
+    if ((a + b < c) || (b + c < a)) {
+        return "not a triangle";
+    }
+
+    else if ((a == b) && (a == c) && (b == c)) {
         return "equilateral";
     }
     else if ((a == b) || (a == c) || (b==c)) {

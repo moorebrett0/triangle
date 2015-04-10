@@ -8,4 +8,7 @@ describe('triange', function() {
     it("will display a scalene triangle if no sides are equal", function() {
         expect(triangle(2,3,4)).to.equal('scalene');
     });
+    it("will return not a triangle if one side is greater than the sum of 2 sides", function() {
+        expect(triangle(2,2,8)).to.equal('not a triangle');
+    });
 });
