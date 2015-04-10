@@ -4,7 +4,7 @@ var triangle = function(input1, input2, input3) {
     var c = parseInt(input3);
 
     if ((a + b < c) || (b + c < a)) {
-        return "not a triangle";
+        return " oops this is not a triangle";
     }
 
     else if ((a == b) && (a == c) && (b == c)) {
@@ -17,3 +17,18 @@ var triangle = function(input1, input2, input3) {
         return "scalene";
     }
 };
+$(document).ready(function() {
+    $("form#triangle").submit(function(event) {
+        var input1 = $("input#input1").val();
+        var input2 = $("input#input2").val();
+        var input3 = $("input#input3").val();
+
+        var result = triangle(input1, input2, input3);
+
+        $("#display").text(result);
+
+
+        $("#result").show();
+        event.preventDefault();
+    });
+});

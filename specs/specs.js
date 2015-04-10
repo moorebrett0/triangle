@@ -9,6 +9,6 @@ describe('triange', function() {
         expect(triangle(2,3,4)).to.equal('scalene');
     });
     it("will return not a triangle if one side is greater than the sum of 2 sides", function() {
-        expect(triangle(2,2,8)).to.equal('not a triangle');
+        expect(triangle(2,2,8)).to.equal('oops this is not a triangle');
     });
 });
