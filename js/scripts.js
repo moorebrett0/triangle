@@ -3,8 +3,8 @@ var triangle = function(input1, input2, input3) {
     var b = parseInt(input2);
     var c = parseInt(input3);
 
-    if ((a + b < c) || (b + c < a) || (a === 0) || (b === 0) || (c === 0)) {
-        return " oops this is not a triangle";
+    if ((a + b <= c) || (b + c <= a) || (a === 0) || (b === 0) || (c === 0)) {
+        return "oops this is not a triangle";
     }
 
     else if ((a == b) && (a == c) && (b == c)) {
